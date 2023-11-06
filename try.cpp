@@ -10,7 +10,7 @@ int main ()
     printf("this will show if the code get the ip sucessfully");
     printf("%d",&PId);
     //used the id i have got
-    HANDLE hpro = ::OpenProcess(PROCESS_ALL_ACCESS, false, 1412);
+    HANDLE hpro = ::OpenProcess(PROCESS_ALL_ACCESS, false, PId);
 
     if (hpro == NULL){
         printf("nononono, that is bad this shoudln't be hereeeee");
